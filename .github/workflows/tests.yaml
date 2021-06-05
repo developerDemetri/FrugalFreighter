@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OS: ubuntu-latest
-      PYTHON: "3.9"
+      PYTHON: "3.9.2"
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: 3.9.2
       - name: Install Poetry Dependencies
         run: |
           pip install -U pip "poetry>=1.1.5,<2.0.0"
@@ -27,8 +27,7 @@ jobs:
           poetry run pylint tests/
       - name: Run Type Checks
         run: |
-          poetry run mypy frugal_freighter/
-          poetry run mypy tests/
+          poetry run mypy
       - name: Run Dependency Check
         run: |
           poetry run safety check

@@ -1,9 +1,9 @@
-FROM python:3.9-slim
+FROM python:3.9.2-slim
 
 RUN useradd -m freighter
 WORKDIR /home/freighter
 
-RUN pip install -U pip "poetry>=1.1.5,<2.0.0"
+RUN pip install -U pip "poetry>=1.1.5,<1.2.0"
 
 COPY frugal_freighter ./frugal_freighter
 COPY pyproject.toml .
@@ -15,4 +15,4 @@ RUN ls | xargs rm -rf
 
 USER freighter
 ENTRYPOINT ["python", "-m", "awslambdaric"]
-CMD ["frugal_freighter.app.handler"]
+CMD ["frugal_freighter.app.lambda_handler"]
