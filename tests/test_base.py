@@ -33,7 +33,7 @@ class TestBase(TestCase):
         },
     }
 
-    mock_failure_event: EventBridgeEvent = {
+    mock_placement_event: EventBridgeEvent = {
         "version": "0",
         "id": "ddca6449-b258-46c0-8653-e0e3a6d0468b",
         "detail-type": "ECS Service Action",

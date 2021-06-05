@@ -10,8 +10,5 @@ class ApplicationLB(LoadBalancer):
     Handles ALB orchestration
     """
 
-    def __init__(self) -> None:
-        pass
-
     def deregister(self) -> None:
         pass

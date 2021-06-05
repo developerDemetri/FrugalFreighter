@@ -10,8 +10,5 @@ class NetworkLB(LoadBalancer):
     Handles NLB orchestration
     """
 
-    def __init__(self) -> None:
-        pass
-
     def deregister(self) -> None:
         pass
