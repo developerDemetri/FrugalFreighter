@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "frugal_freighter"
-version = "0.1.0"
+version = "0.2.0"
 description = "Ship your containers into AWS as cost effectively as possible without sacrificing availability."
 authors = ["Demetrius Shargani <https://github.com/developerDemetri>"]
 license = "Apache-2.0"
@@ -9,7 +9,7 @@ license = "Apache-2.0"
 python = "~3.9.2"
 awslambdaric = "~1.1.0"
 boto3 = "~1.17.88"
-boto3-stubs = {version = "~1.17.88", extras = ["elbv2"]}
+boto3-stubs = {version = "~1.17.88", extras = ["ecs", "elbv2"]}
 ecs-logging = "~1.0.0"
 
 [tool.poetry.dev-dependencies]

@@ -11,4 +11,8 @@ class ApplicationLB(LoadBalancer):
     """
 
     def deregister(self) -> None:
-        pass
+        """
+        Deregister ALB target
+        """
+
+        raise NotImplementedError()

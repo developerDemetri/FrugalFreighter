@@ -11,4 +11,8 @@ class PlacementFailureHandler(EventHandler):
     """
 
     def handle(self) -> None:
-        pass
+        """
+        Handle Spot Termination
+        """
+
+        raise NotImplementedError()

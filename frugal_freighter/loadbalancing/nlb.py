@@ -11,4 +11,8 @@ class NetworkLB(LoadBalancer):
     """
 
     def deregister(self) -> None:
-        pass
+        """
+        Deregister NLB target
+        """
+
+        raise NotImplementedError()

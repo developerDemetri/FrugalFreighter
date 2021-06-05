@@ -11,4 +11,8 @@ class SpotInterruptionHandler(EventHandler):
     """
 
     def handle(self) -> None:
-        pass
+        """
+        Handle Spot Termination
+        """
+
+        raise NotImplementedError()
